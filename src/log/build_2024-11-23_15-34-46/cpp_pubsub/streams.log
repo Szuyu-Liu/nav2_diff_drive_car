@@ -1,0 +1,45 @@
+[0.058s] Invoking command in '/home/pi/ros2_ws/src/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/szuyu_ws/install/launch_testing_examples:/home/pi/szuyu_ws/install/examples_rclpy_pointcloud_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclpy_minimal_service:/home/pi/szuyu_ws/install/examples_rclpy_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclpy_guard_conditions:/home/pi/szuyu_ws/install/examples_rclpy_executors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/install/cpp_pubsub
+[0.375s] -- The C compiler identification is GNU 13.2.0
+[0.665s] -- The CXX compiler identification is GNU 13.2.0
+[0.758s] -- Detecting C compiler ABI info
+[1.256s] -- Detecting C compiler ABI info - done
+[1.291s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.292s] -- Detecting C compile features
+[1.293s] -- Detecting C compile features - done
+[1.344s] -- Detecting CXX compiler ABI info
+[1.872s] -- Detecting CXX compiler ABI info - done
+[1.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.908s] -- Detecting CXX compile features
+[1.910s] -- Detecting CXX compile features - done
+[1.953s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.032s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.003s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.496s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.652s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.820s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.996s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.621s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.669s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.303s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.402s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.502s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.001s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[7.201s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[7.201s]   By not providing "Findlibserial.cmake" in CMAKE_MODULE_PATH this project
+[7.202s]   has asked CMake to find a package configuration file provided by
+[7.202s]   "libserial", but CMake did not find one.
+[7.202s] 
+[7.203s]   Could not find a package configuration file provided by "libserial" with
+[7.203s]   any of the following names:
+[7.204s] 
+[7.204s]     libserialConfig.cmake
+[7.205s]     libserial-config.cmake
+[7.205s] 
+[7.206s]   Add the installation prefix of "libserial" to CMAKE_PREFIX_PATH or set
+[7.206s]   "libserial_DIR" to a directory containing one of the above files.  If
+[7.207s]   "libserial" provides a separate development package or SDK, be sure it has
+[7.207s]   been installed.
+[7.208s] 
+[7.209s] [0m
+[7.211s] -- Configuring incomplete, errors occurred!
+[7.239s] Invoked command in '/home/pi/ros2_ws/src/build/cpp_pubsub' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/szuyu_ws/install/launch_testing_examples:/home/pi/szuyu_ws/install/examples_rclpy_pointcloud_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclpy_minimal_service:/home/pi/szuyu_ws/install/examples_rclpy_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclpy_guard_conditions:/home/pi/szuyu_ws/install/examples_rclpy_executors:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/install/cpp_pubsub

@@ -1,0 +1,179 @@
+[0.000000] (-) TimerEvent: {}
+[0.005079] (imu_bno055) JobQueued: {'identifier': 'imu_bno055', 'dependencies': OrderedDict()}
+[0.005710] (imu_bno055) JobStarted: {'identifier': 'imu_bno055'}
+[0.067585] (imu_bno055) JobProgress: {'identifier': 'imu_bno055', 'progress': 'cmake'}
+[0.073786] (imu_bno055) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/ros2_ws_car/src/imu_bno055', '-DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055'], 'cwd': '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.188.45 61147 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/ros2_ws_car', 'SSH_TTY': '/dev/pts/6', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/pi/ros2_ws_car/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '10', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/pi/ros2_ws_car/install/ydlidar_ros2_driver:/home/pi/ros2_ws_car/install/python_parameters:/home/pi/ros2_ws_car/install/imu_bno055:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.188.45 61147 192.168.188.146 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/ros2_ws_car/install/ydlidar_ros2_driver:/home/pi/ros2_ws_car/install/imu_bno055:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/pi/ros2_ws_car/install/python_parameters:/opt/ros/jazzy'}), 'shell': False}
+[0.099715] (-) TimerEvent: {}
+[0.207596] (-) TimerEvent: {}
+[0.309188] (-) TimerEvent: {}
+[0.411485] (-) TimerEvent: {}
+[0.515256] (-) TimerEvent: {}
+[0.600537] (imu_bno055) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.615521] (-) TimerEvent: {}
+[0.721821] (-) TimerEvent: {}
+[0.823569] (-) TimerEvent: {}
+[0.927475] (-) TimerEvent: {}
+[1.028570] (-) TimerEvent: {}
+[1.098137] (imu_bno055) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.132535] (-) TimerEvent: {}
+[1.235055] (-) TimerEvent: {}
+[1.260630] (imu_bno055) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.335313] (-) TimerEvent: {}
+[1.439563] (-) TimerEvent: {}
+[1.545456] (-) TimerEvent: {}
+[1.646337] (-) TimerEvent: {}
+[1.750470] (-) TimerEvent: {}
+[1.851222] (-) TimerEvent: {}
+[1.952145] (-) TimerEvent: {}
+[2.054918] (-) TimerEvent: {}
+[2.156510] (imu_bno055) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.157137] (-) TimerEvent: {}
+[2.203870] (imu_bno055) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.204990] (imu_bno055) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.206310] (imu_bno055) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.259455] (-) TimerEvent: {}
+[2.279623] (imu_bno055) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.360128] (-) TimerEvent: {}
+[2.462515] (-) TimerEvent: {}
+[2.563550] (-) TimerEvent: {}
+[2.664559] (-) TimerEvent: {}
+[2.765789] (-) TimerEvent: {}
+[2.867823] (-) TimerEvent: {}
+[2.969721] (-) TimerEvent: {}
+[3.070761] (-) TimerEvent: {}
+[3.171791] (-) TimerEvent: {}
+[3.188865] (imu_bno055) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.251953] (imu_bno055) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.258540] (imu_bno055) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.259351] (imu_bno055) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.271974] (-) TimerEvent: {}
+[3.351631] (imu_bno055) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[3.372511] (-) TimerEvent: {}
+[3.477448] (-) TimerEvent: {}
+[3.580136] (-) TimerEvent: {}
+[3.681366] (-) TimerEvent: {}
+[3.785214] (-) TimerEvent: {}
+[3.886224] (-) TimerEvent: {}
+[3.988746] (-) TimerEvent: {}
+[4.092068] (-) TimerEvent: {}
+[4.192903] (-) TimerEvent: {}
+[4.293822] (-) TimerEvent: {}
+[4.395257] (-) TimerEvent: {}
+[4.496931] (-) TimerEvent: {}
+[4.600657] (-) TimerEvent: {}
+[4.702518] (-) TimerEvent: {}
+[4.803764] (-) TimerEvent: {}
+[4.831449] (imu_bno055) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.906450] (-) TimerEvent: {}
+[5.011433] (-) TimerEvent: {}
+[5.114477] (-) TimerEvent: {}
+[5.215514] (-) TimerEvent: {}
+[5.320752] (-) TimerEvent: {}
+[5.424433] (-) TimerEvent: {}
+[5.525319] (-) TimerEvent: {}
+[5.630434] (-) TimerEvent: {}
+[5.731339] (-) TimerEvent: {}
+[5.833496] (-) TimerEvent: {}
+[5.934731] (-) TimerEvent: {}
+[6.039008] (-) TimerEvent: {}
+[6.140420] (-) TimerEvent: {}
+[6.264434] (-) TimerEvent: {}
+[6.314996] (imu_bno055) StdoutLine: {'line': b'-- Found ament_cmake_auto: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)\n'}
+[6.364848] (-) TimerEvent: {}
+[6.468089] (-) TimerEvent: {}
+[6.572467] (-) TimerEvent: {}
+[6.673238] (-) TimerEvent: {}
+[6.774378] (-) TimerEvent: {}
+[6.875796] (-) TimerEvent: {}
+[6.978563] (-) TimerEvent: {}
+[7.082926] (-) TimerEvent: {}
+[7.184925] (-) TimerEvent: {}
+[7.285791] (-) TimerEvent: {}
+[7.387037] (-) TimerEvent: {}
+[7.487889] (-) TimerEvent: {}
+[7.590514] (-) TimerEvent: {}
+[7.691486] (-) TimerEvent: {}
+[7.794477] (-) TimerEvent: {}
+[7.895314] (-) TimerEvent: {}
+[7.991595] (imu_bno055) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[7.995465] (-) TimerEvent: {}
+[8.096739] (-) TimerEvent: {}
+[8.200963] (-) TimerEvent: {}
+[8.237638] (imu_bno055) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[8.301219] (-) TimerEvent: {}
+[8.403472] (-) TimerEvent: {}
+[8.479643] (imu_bno055) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.503639] (-) TimerEvent: {}
+[8.605701] (-) TimerEvent: {}
+[8.713192] (-) TimerEvent: {}
+[8.768839] (imu_bno055) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.816889] (-) TimerEvent: {}
+[8.917743] (-) TimerEvent: {}
+[9.021437] (-) TimerEvent: {}
+[9.123794] (-) TimerEvent: {}
+[9.226424] (-) TimerEvent: {}
+[9.327189] (-) TimerEvent: {}
+[9.428339] (-) TimerEvent: {}
+[9.529783] (-) TimerEvent: {}
+[9.633230] (-) TimerEvent: {}
+[9.734111] (-) TimerEvent: {}
+[9.748815] (imu_bno055) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[9.823564] (imu_bno055) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[9.836464] (-) TimerEvent: {}
+[9.940704] (-) TimerEvent: {}
+[10.041547] (-) TimerEvent: {}
+[10.143305] (-) TimerEvent: {}
+[10.246586] (-) TimerEvent: {}
+[10.347654] (-) TimerEvent: {}
+[10.453128] (-) TimerEvent: {}
+[10.554111] (-) TimerEvent: {}
+[10.656391] (-) TimerEvent: {}
+[10.759057] (-) TimerEvent: {}
+[10.843757] (imu_bno055) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[10.861637] (-) TimerEvent: {}
+[10.963538] (-) TimerEvent: {}
+[10.994465] (imu_bno055) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[11.065373] (-) TimerEvent: {}
+[11.153159] (imu_bno055) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.167434] (-) TimerEvent: {}
+[11.325629] (-) TimerEvent: {}
+[11.427945] (-) TimerEvent: {}
+[11.530421] (-) TimerEvent: {}
+[11.635370] (-) TimerEvent: {}
+[11.736581] (-) TimerEvent: {}
+[11.837702] (-) TimerEvent: {}
+[11.940465] (-) TimerEvent: {}
+[12.045546] (-) TimerEvent: {}
+[12.147203] (-) TimerEvent: {}
+[12.249866] (-) TimerEvent: {}
+[12.355537] (-) TimerEvent: {}
+[12.459662] (-) TimerEvent: {}
+[12.523246] (imu_bno055) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/io_context/cmake/io_context-extras.cmake:17 (find_package):\n'}
+[12.525308] (imu_bno055) StderrLine: {'line': b'  By not providing "Findasio_cmake_module.cmake" in CMAKE_MODULE_PATH this\n'}
+[12.538201] (imu_bno055) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[12.540113] (imu_bno055) StderrLine: {'line': b'  "asio_cmake_module", but CMake did not find one.\n'}
+[12.549810] (imu_bno055) StderrLine: {'line': b'\n'}
+[12.554073] (imu_bno055) StderrLine: {'line': b'  Could not find a package configuration file provided by "asio_cmake_module"\n'}
+[12.566317] (-) TimerEvent: {}
+[12.574510] (imu_bno055) StderrLine: {'line': b'  with any of the following names:\n'}
+[12.584805] (imu_bno055) StderrLine: {'line': b'\n'}
+[12.596074] (imu_bno055) StderrLine: {'line': b'    asio_cmake_moduleConfig.cmake\n'}
+[12.605510] (imu_bno055) StderrLine: {'line': b'    asio_cmake_module-config.cmake\n'}
+[12.614133] (imu_bno055) StderrLine: {'line': b'\n'}
+[12.631643] (imu_bno055) StderrLine: {'line': b'  Add the installation prefix of "asio_cmake_module" to CMAKE_PREFIX_PATH or\n'}
+[12.641884] (imu_bno055) StderrLine: {'line': b'  set "asio_cmake_module_DIR" to a directory containing one of the above\n'}
+[12.643976] (imu_bno055) StderrLine: {'line': b'  files.  If "asio_cmake_module" provides a separate development package or\n'}
+[12.647346] (imu_bno055) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[12.657828] (imu_bno055) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[12.659248] (imu_bno055) StderrLine: {'line': b'  /opt/ros/jazzy/share/io_context/cmake/io_contextConfig.cmake:41 (include)\n'}
+[12.681085] (-) TimerEvent: {}
+[12.690466] (imu_bno055) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)\n'}
+[12.696568] (imu_bno055) StderrLine: {'line': b'  CMakeLists.txt:16 (ament_auto_find_build_dependencies)\n'}
+[12.701656] (imu_bno055) StderrLine: {'line': b'\n'}
+[12.713940] (imu_bno055) StderrLine: {'line': b'\x1b[0m\n'}
+[12.718168] (imu_bno055) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[12.723044] (imu_bno055) CommandEnded: {'returncode': 1}
+[12.782590] (-) TimerEvent: {}
+[12.886732] (-) TimerEvent: {}
+[12.964538] (imu_bno055) JobEnded: {'identifier': 'imu_bno055', 'rc': 1}
+[12.981496] (-) EventReactorShutdown: {}

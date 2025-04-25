@@ -1,0 +1,81 @@
+[0.883s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'imu_bno055']
+[0.883s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['imu_bno055'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffaf8bbc20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffafaa0350>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffafaa0350>>, mixin_verb=('build',))
+[1.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.150s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/ros2_ws_car/src/imu_bno055'
+[1.151s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.383s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'imu_bno055'
+[1.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.515s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.525s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/pi/ros2_ws_car/install/ydlidar_ros2_driver' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[1.529s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/pi/ros2_ws_car/install/ydlidar_ros2_driver' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[1.541s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/pi/ros2_ws_car/install
+[1.557s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 381 installed packages in /opt/ros/jazzy
+[1.574s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.045s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_args' from command line to 'None'
+[2.045s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_target' from command line to 'None'
+[2.045s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.045s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_clean_cache' from command line to 'False'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_clean_first' from command line to 'False'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'cmake_force_configure' from command line to 'False'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'ament_cmake_args' from command line to 'None'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'catkin_cmake_args' from command line to 'None'
+[2.046s] Level 5:colcon.colcon_core.verb:set package 'imu_bno055' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.046s] DEBUG:colcon.colcon_core.verb:Building package 'imu_bno055' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055', 'merge_install': False, 'path': '/home/pi/ros2_ws_car/src/imu_bno055', 'symlink_install': False, 'test_result_base': None}
+[2.047s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.052s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.054s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/ros2_ws_car/src/imu_bno055' with build type 'ament_cmake'
+[2.054s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/ros2_ws_car/src/imu_bno055'
+[2.068s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.070s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.070s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws_car/install/python_parameters:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws_car/src/imu_bno055 -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055
+[14.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws_car/install/python_parameters:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws_car/src/imu_bno055 -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055
+[14.952s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_bno055)
+[14.975s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055' for CMake module files
+[14.978s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055' for CMake config files
+[14.981s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/bin'
+[14.982s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/lib/pkgconfig/imu_bno055.pc'
+[14.984s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/lib/python3.12/site-packages'
+[14.986s] Level 1:colcon.colcon_core.environment:checking '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/bin'
+[14.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/imu_bno055/package.ps1'
+[14.995s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/imu_bno055/package.dsv'
+[14.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/imu_bno055/package.sh'
+[15.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/imu_bno055/package.bash'
+[15.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/imu_bno055/package.zsh'
+[15.012s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055/share/colcon-core/packages/imu_bno055)
+[15.026s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[15.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[15.027s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[15.028s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[15.091s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[15.091s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[15.092s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[15.256s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[15.257s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/ros2_ws_car/src/imu_bno055/install/local_setup.ps1'
+[15.265s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/ros2_ws_car/src/imu_bno055/install/_local_setup_util_ps1.py'
+[15.274s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/ros2_ws_car/src/imu_bno055/install/setup.ps1'
+[15.282s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/ros2_ws_car/src/imu_bno055/install/local_setup.sh'
+[15.286s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/ros2_ws_car/src/imu_bno055/install/_local_setup_util_sh.py'
+[15.290s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/ros2_ws_car/src/imu_bno055/install/setup.sh'
+[15.298s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/ros2_ws_car/src/imu_bno055/install/local_setup.bash'
+[15.303s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/ros2_ws_car/src/imu_bno055/install/setup.bash'
+[15.314s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/ros2_ws_car/src/imu_bno055/install/local_setup.zsh'
+[15.317s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/ros2_ws_car/src/imu_bno055/install/setup.zsh'

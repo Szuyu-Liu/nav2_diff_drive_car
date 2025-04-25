@@ -1,0 +1,3 @@
+[console_scripts]
+listener = python_parameters.subscriber_member_function:main
+odometry_talker = python_parameters.teensy_subscriber:main

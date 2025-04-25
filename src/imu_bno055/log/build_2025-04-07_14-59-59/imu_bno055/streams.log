@@ -1,0 +1,48 @@
+[0.078s] Invoking command in '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws_car/install/python_parameters:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws_car/src/imu_bno055 -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055
+[0.596s] -- The C compiler identification is GNU 13.3.0
+[1.093s] -- The CXX compiler identification is GNU 13.3.0
+[1.255s] -- Detecting C compiler ABI info
+[2.151s] -- Detecting C compiler ABI info - done
+[2.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.200s] -- Detecting C compile features
+[2.202s] -- Detecting C compile features - done
+[2.274s] -- Detecting CXX compiler ABI info
+[3.184s] -- Detecting CXX compiler ABI info - done
+[3.247s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.253s] -- Detecting CXX compile features
+[3.254s] -- Detecting CXX compile features - done
+[3.346s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.827s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.310s] -- Found ament_cmake_auto: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[7.986s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.232s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.474s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.764s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.744s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[9.819s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[10.840s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[10.989s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[11.148s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[12.519s] [31mCMake Error at /opt/ros/jazzy/share/io_context/cmake/io_context-extras.cmake:17 (find_package):
+[12.532s]   By not providing "Findasio_cmake_module.cmake" in CMAKE_MODULE_PATH this
+[12.534s]   project has asked CMake to find a package configuration file provided by
+[12.543s]   "asio_cmake_module", but CMake did not find one.
+[12.548s] 
+[12.549s]   Could not find a package configuration file provided by "asio_cmake_module"
+[12.571s]   with any of the following names:
+[12.581s] 
+[12.599s]     asio_cmake_moduleConfig.cmake
+[12.608s]     asio_cmake_module-config.cmake
+[12.610s] 
+[12.627s]   Add the installation prefix of "asio_cmake_module" to CMAKE_PREFIX_PATH or
+[12.638s]   set "asio_cmake_module_DIR" to a directory containing one of the above
+[12.641s]   files.  If "asio_cmake_module" provides a separate development package or
+[12.652s]   SDK, be sure it has been installed.
+[12.653s] Call Stack (most recent call first):
+[12.675s]   /opt/ros/jazzy/share/io_context/cmake/io_contextConfig.cmake:41 (include)
+[12.690s]   /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[12.695s]   CMakeLists.txt:16 (ament_auto_find_build_dependencies)
+[12.708s] 
+[12.712s] [0m
+[12.717s] -- Configuring incomplete, errors occurred!
+[12.719s] Invoked command in '/home/pi/ros2_ws_car/src/imu_bno055/build/imu_bno055' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws_car/install/python_parameters:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/pi/ros2_ws_car/src/imu_bno055 -DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws_car/src/imu_bno055/install/imu_bno055

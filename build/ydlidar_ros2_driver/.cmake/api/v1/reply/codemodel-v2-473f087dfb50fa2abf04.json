@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1d98942b9ad95e9d0ca7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ydlidar_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3ede50d8f439fa7cc99b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_client::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_client-ca6ab88388d3ee10907f.json",
+					"name" : "ydlidar_ros2_driver_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_node-d207ee627c609b97e858.json",
+					"name" : "ydlidar_ros2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_ros2_driver_uninstall-4d342da532b4c6d76109.json",
+					"name" : "ydlidar_ros2_driver_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/ros2_ws_car/build/ydlidar_ros2_driver",
+		"source" : "/home/pi/ros2_ws_car/src/ydlidar_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

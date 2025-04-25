@@ -1,0 +1,150 @@
+[0.000000] (-) TimerEvent: {}
+[0.001470] (-) JobUnselected: {'identifier': 'cpp_parameters'}
+[0.001624] (-) JobUnselected: {'identifier': 'cpp_test'}
+[0.001703] (-) JobUnselected: {'identifier': 'examples_rclcpp_async_client'}
+[0.001766] (-) JobUnselected: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.001828] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.001890] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.001949] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_client'}
+[0.002008] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_composition'}
+[0.002066] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[0.002125] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_service'}
+[0.002184] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[0.002243] (-) JobUnselected: {'identifier': 'examples_rclcpp_minimal_timer'}
+[0.002302] (-) JobUnselected: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[0.002361] (-) JobUnselected: {'identifier': 'examples_rclcpp_wait_set'}
+[0.002420] (-) JobUnselected: {'identifier': 'examples_rclpy_executors'}
+[0.002478] (-) JobUnselected: {'identifier': 'examples_rclpy_guard_conditions'}
+[0.002557] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_client'}
+[0.002625] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_action_server'}
+[0.002685] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_client'}
+[0.002777] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_publisher'}
+[0.002838] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_service'}
+[0.002896] (-) JobUnselected: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[0.002955] (-) JobUnselected: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[0.003013] (-) JobUnselected: {'identifier': 'launch_testing_examples'}
+[0.003071] (-) JobUnselected: {'identifier': 'my_package'}
+[0.003130] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.003196] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.003266] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.057254] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.058115] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/ros2_ws/src/cpp_pubsub', '-DCMAKE_INSTALL_PREFIX=/home/pi/ros2_ws/src/install/cpp_pubsub'], 'cwd': '/home/pi/ros2_ws/src/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.188.55 53198 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/pi/szuyu_ws/install/examples_rclcpp_wait_set/lib:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/ros2_ws/src/cpp_pubsub', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/pi/szuyu_ws/src/install:/home/pi/szuyu_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/pi/szuyu_ws/src/install/my_package:/home/pi/szuyu_ws/install/launch_testing_examples:/home/pi/szuyu_ws/install/examples_rclpy_pointcloud_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclpy_minimal_service:/home/pi/szuyu_ws/install/examples_rclpy_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclpy_guard_conditions:/home/pi/szuyu_ws/install/examples_rclpy_executors:/home/pi/szuyu_ws/install/examples_rclcpp_wait_set:/home/pi/szuyu_ws/install/examples_rclcpp_multithreaded_executor:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_timer:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_service:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_composition:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_client:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclcpp_cbg_executor:/home/pi/szuyu_ws/install/examples_rclcpp_async_client:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/ros2_ws/src/build/cpp_pubsub', 'SSH_CONNECTION': '192.168.188.55 53198 192.168.188.146 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/szuyu_ws/build/launch_testing_examples:/home/pi/szuyu_ws/install/launch_testing_examples/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_pointcloud_publisher:/home/pi/szuyu_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_service:/home/pi/szuyu_ws/install/examples_rclpy_minimal_service/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_client/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_server/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_client/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_guard_conditions:/home/pi/szuyu_ws/install/examples_rclpy_guard_conditions/lib/python3.12/site-packages:/home/pi/szuyu_ws/build/examples_rclpy_executors:/home/pi/szuyu_ws/install/examples_rclpy_executors/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/szuyu_ws/src/install/my_package:/home/pi/szuyu_ws/install/examples_rclcpp_wait_set:/home/pi/szuyu_ws/install/examples_rclcpp_multithreaded_executor:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_timer:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_service:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_composition:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_client:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclcpp_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclcpp_cbg_executor:/home/pi/szuyu_ws/install/examples_rclcpp_async_client:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/pi/szuyu_ws/install/launch_testing_examples:/home/pi/szuyu_ws/install/examples_rclpy_pointcloud_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_subscriber:/home/pi/szuyu_ws/install/examples_rclpy_minimal_service:/home/pi/szuyu_ws/install/examples_rclpy_minimal_publisher:/home/pi/szuyu_ws/install/examples_rclpy_minimal_client:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_server:/home/pi/szuyu_ws/install/examples_rclpy_minimal_action_client:/home/pi/szuyu_ws/install/examples_rclpy_guard_conditions:/home/pi/szuyu_ws/install/examples_rclpy_executors:/opt/ros/jazzy'}), 'shell': False}
+[0.099225] (-) TimerEvent: {}
+[0.199927] (-) TimerEvent: {}
+[0.300664] (-) TimerEvent: {}
+[0.377621] (cpp_pubsub) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.400852] (-) TimerEvent: {}
+[0.501473] (-) TimerEvent: {}
+[0.602223] (-) TimerEvent: {}
+[0.667782] (cpp_pubsub) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[0.702459] (-) TimerEvent: {}
+[0.761144] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.802707] (-) TimerEvent: {}
+[0.903349] (-) TimerEvent: {}
+[1.004308] (-) TimerEvent: {}
+[1.105866] (-) TimerEvent: {}
+[1.206566] (-) TimerEvent: {}
+[1.258331] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.293667] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.294560] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.296100] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.306688] (-) TimerEvent: {}
+[1.346883] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.406929] (-) TimerEvent: {}
+[1.507675] (-) TimerEvent: {}
+[1.608321] (-) TimerEvent: {}
+[1.709056] (-) TimerEvent: {}
+[1.809814] (-) TimerEvent: {}
+[1.875079] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.910058] (cpp_pubsub) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.910640] (-) TimerEvent: {}
+[1.911093] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.912959] (cpp_pubsub) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.956099] (cpp_pubsub) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.010795] (-) TimerEvent: {}
+[2.111339] (-) TimerEvent: {}
+[2.211909] (-) TimerEvent: {}
+[2.312490] (-) TimerEvent: {}
+[2.413182] (-) TimerEvent: {}
+[2.513902] (-) TimerEvent: {}
+[2.614607] (-) TimerEvent: {}
+[2.715192] (-) TimerEvent: {}
+[2.815846] (-) TimerEvent: {}
+[2.916348] (-) TimerEvent: {}
+[3.017053] (-) TimerEvent: {}
+[3.034789] (cpp_pubsub) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.117187] (-) TimerEvent: {}
+[3.217763] (-) TimerEvent: {}
+[3.318323] (-) TimerEvent: {}
+[3.419034] (-) TimerEvent: {}
+[3.519656] (-) TimerEvent: {}
+[3.620222] (-) TimerEvent: {}
+[3.720806] (-) TimerEvent: {}
+[3.821363] (-) TimerEvent: {}
+[3.921992] (-) TimerEvent: {}
+[4.005744] (cpp_pubsub) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[4.022153] (-) TimerEvent: {}
+[4.122732] (-) TimerEvent: {}
+[4.223308] (-) TimerEvent: {}
+[4.323896] (-) TimerEvent: {}
+[4.424457] (-) TimerEvent: {}
+[4.498996] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.524628] (-) TimerEvent: {}
+[4.625196] (-) TimerEvent: {}
+[4.655212] (cpp_pubsub) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.725364] (-) TimerEvent: {}
+[4.822580] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.825504] (-) TimerEvent: {}
+[4.926095] (-) TimerEvent: {}
+[4.999151] (cpp_pubsub) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.026249] (-) TimerEvent: {}
+[5.126826] (-) TimerEvent: {}
+[5.227411] (-) TimerEvent: {}
+[5.328035] (-) TimerEvent: {}
+[5.428652] (-) TimerEvent: {}
+[5.529228] (-) TimerEvent: {}
+[5.623746] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[5.629374] (-) TimerEvent: {}
+[5.671747] (cpp_pubsub) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.729600] (-) TimerEvent: {}
+[5.830166] (-) TimerEvent: {}
+[5.930788] (-) TimerEvent: {}
+[6.031415] (-) TimerEvent: {}
+[6.132122] (-) TimerEvent: {}
+[6.232964] (-) TimerEvent: {}
+[6.305408] (cpp_pubsub) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[6.333138] (-) TimerEvent: {}
+[6.404856] (cpp_pubsub) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[6.433306] (-) TimerEvent: {}
+[6.504848] (cpp_pubsub) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.533465] (-) TimerEvent: {}
+[6.634083] (-) TimerEvent: {}
+[6.734670] (-) TimerEvent: {}
+[6.835237] (-) TimerEvent: {}
+[6.935863] (-) TimerEvent: {}
+[7.003360] (cpp_pubsub) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[7.036043] (-) TimerEvent: {}
+[7.136665] (-) TimerEvent: {}
+[7.203337] (cpp_pubsub) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[7.204150] (cpp_pubsub) StderrLine: {'line': b'  By not providing "Findlibserial.cmake" in CMAKE_MODULE_PATH this project\n'}
+[7.204567] (cpp_pubsub) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[7.204933] (cpp_pubsub) StderrLine: {'line': b'  "libserial", but CMake did not find one.\n'}
+[7.205273] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[7.205782] (cpp_pubsub) StderrLine: {'line': b'  Could not find a package configuration file provided by "libserial" with\n'}
+[7.206242] (cpp_pubsub) StderrLine: {'line': b'  any of the following names:\n'}
+[7.206636] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[7.207303] (cpp_pubsub) StderrLine: {'line': b'    libserialConfig.cmake\n'}
+[7.207888] (cpp_pubsub) StderrLine: {'line': b'    libserial-config.cmake\n'}
+[7.208266] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[7.208693] (cpp_pubsub) StderrLine: {'line': b'  Add the installation prefix of "libserial" to CMAKE_PREFIX_PATH or set\n'}
+[7.209066] (cpp_pubsub) StderrLine: {'line': b'  "libserial_DIR" to a directory containing one of the above files.  If\n'}
+[7.209553] (cpp_pubsub) StderrLine: {'line': b'  "libserial" provides a separate development package or SDK, be sure it has\n'}
+[7.209970] (cpp_pubsub) StderrLine: {'line': b'  been installed.\n'}
+[7.210360] (cpp_pubsub) StderrLine: {'line': b'\n'}
+[7.211738] (cpp_pubsub) StderrLine: {'line': b'\x1b[0m\n'}
+[7.213268] (cpp_pubsub) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.236875] (-) TimerEvent: {}
+[7.241284] (cpp_pubsub) CommandEnded: {'returncode': 1}
+[7.335914] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 1}
+[7.337478] (-) TimerEvent: {}
+[7.347734] (-) EventReactorShutdown: {}
