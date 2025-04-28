@@ -77,7 +77,7 @@ class SensorFusionNode(Node):
         #if -1 < displacement < 1:
         #    displacement = 0
 
-        self.orientation_change = ((delta_theta_left - delta_theta_right) / 2) * (self.circumference / self.turning_circumference)
+        # self.orientation_change = ((delta_theta_left - delta_theta_right) / 2) * (self.circumference / self.turning_circumference)
         #if -3 < self.orientation_change < 3:
         #    self.orientation_change = 0
         
@@ -120,13 +120,14 @@ class SensorFusionNode(Node):
             self.get_logger().info(f'Storing initial IMU heading: {self.initial_imu_heading:.2f}')
 
         heading_change = current_heading - self.last_heading
-        # Ignore small drifts (≤ 1.0) in heading calculation, but still publish odometry
-        if abs(heading_change) >= 1.0:
+        # Ignore small drifts (≤ 0.1) in heading calculation, but still publish odometry
+        # if abs(heading_change) >= 0.1:
             # ignore the imu noise around 8.0 and current_heading around 248
-            if 7.5 <= abs(heading_change) <= 8.5 or current_heading >= 360:
-                current_heading = self.last_heading
-            else:
-                self.theta_imu += (current_heading - self.last_heading)
+        if current_heading >= 360:
+            current_heading = self.last_heading
+        else:
+            self.theta_imu += (current_heading - self.last_heading)
+            self.orientation_change = heading_change
                 
         self.last_heading = current_heading
         #self.get_logger().info(f'real angle:{current_heading:.2f}')
