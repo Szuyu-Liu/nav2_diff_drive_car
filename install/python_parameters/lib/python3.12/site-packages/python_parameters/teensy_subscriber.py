@@ -121,13 +121,13 @@ class SensorFusionNode(Node):
 
         heading_change = current_heading - self.last_heading
         # Ignore small drifts (≤ 0.1) in heading calculation, but still publish odometry
-        # if abs(heading_change) >= 0.1:
+        if abs(heading_change) >= 0.1:
             # ignore the imu noise around 8.0 and current_heading around 248
-        if current_heading >= 360:
-            current_heading = self.last_heading
-        else:
-            self.theta_imu += (current_heading - self.last_heading)
-            self.orientation_change = heading_change
+            if current_heading >= 360:
+                current_heading = self.last_heading
+            else:
+                self.theta_imu += (current_heading - self.last_heading)
+                self.orientation_change = heading_change
                 
         self.last_heading = current_heading
         #self.get_logger().info(f'real angle:{current_heading:.2f}')

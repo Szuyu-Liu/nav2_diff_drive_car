@@ -1,0 +1,26 @@
+[1.644s] Invoking command in '/home/pi/ros2_ws_car/src/python_parameters': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pi/ros2_ws_car/build/python_parameters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_parameters build --build-base /home/pi/ros2_ws_car/build/python_parameters/build install --record /home/pi/ros2_ws_car/build/python_parameters/install.log --single-version-externally-managed install_data
+[2.003s] running egg_info
+[2.029s] writing ../../build/python_parameters/python_parameters.egg-info/PKG-INFO
+[2.030s] writing dependency_links to ../../build/python_parameters/python_parameters.egg-info/dependency_links.txt
+[2.031s] writing entry points to ../../build/python_parameters/python_parameters.egg-info/entry_points.txt
+[2.031s] writing requirements to ../../build/python_parameters/python_parameters.egg-info/requires.txt
+[2.032s] writing top-level names to ../../build/python_parameters/python_parameters.egg-info/top_level.txt
+[2.087s] reading manifest file '../../build/python_parameters/python_parameters.egg-info/SOURCES.txt'
+[2.088s] adding license file 'LICENSE'
+[2.089s] writing manifest file '../../build/python_parameters/python_parameters.egg-info/SOURCES.txt'
+[2.089s] running build
+[2.089s] running build_py
+[2.091s] copying python_parameters/teensy_subscriber.py -> /home/pi/ros2_ws_car/build/python_parameters/build/lib/python_parameters
+[2.091s] running install
+[2.101s] running install_lib
+[2.128s] copying /home/pi/ros2_ws_car/build/python_parameters/build/lib/python_parameters/teensy_subscriber.py -> /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters
+[2.129s] byte-compiling /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/teensy_subscriber.py to teensy_subscriber.cpython-312.pyc
+[2.131s] running install_data
+[2.131s] running install_egg_info
+[2.159s] removing '/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters-0.0.0-py3.12.egg-info' (and everything under it)
+[2.160s] Copying ../../build/python_parameters/python_parameters.egg-info to /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters-0.0.0-py3.12.egg-info
+[2.161s] running install_scripts
+[2.344s] Installing listener script to /home/pi/ros2_ws_car/install/python_parameters/lib/python_parameters
+[2.345s] Installing odometry_talker script to /home/pi/ros2_ws_car/install/python_parameters/lib/python_parameters
+[2.347s] writing list of installed files to '/home/pi/ros2_ws_car/build/python_parameters/install.log'
+[2.425s] Invoked command in '/home/pi/ros2_ws_car/src/python_parameters' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/pi/ros2_ws_car/build/python_parameters/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/python_parameters build --build-base /home/pi/ros2_ws_car/build/python_parameters/build install --record /home/pi/ros2_ws_car/build/python_parameters/install.log --single-version-externally-managed install_data

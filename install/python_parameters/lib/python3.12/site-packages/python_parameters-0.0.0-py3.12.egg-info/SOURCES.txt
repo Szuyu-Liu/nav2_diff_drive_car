@@ -13,6 +13,8 @@ python_parameters/__init__.py
 python_parameters/publisher_member_function.py
 python_parameters/subscriber_member_function.py
 python_parameters/teensy_subscriber.py
+python_parameters/teensy_subscriber_fusion.py
+python_parameters/teensy_subscriber_odom.py
 resource/python_parameters
 test/test_copyright.py
 test/test_flake8.py
