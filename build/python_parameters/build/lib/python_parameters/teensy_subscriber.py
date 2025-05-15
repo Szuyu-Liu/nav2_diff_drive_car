@@ -31,8 +31,9 @@ class SensorFusionNode(Node):
         self.x = 0.0
         self.y = 0.0
         self.theta = 0.0  # Initial orientation
-        self.theta_imu = 0.0 # initial imu theta for sensor fusion
-        self.theta_odom = 0.0 # initial odom theta for sensor fusion
+        self.theta_odom = 0.0
+        self.theta_imu = 0.0
+        self.use_imu = True
         self.orientation_change = 0.0
         self.prev_right_angle = None
         self.prev_left_angle = None
@@ -77,36 +78,27 @@ class SensorFusionNode(Node):
         #if -1 < displacement < 1:
         #    displacement = 0
 
-        # self.orientation_change = ((delta_theta_left - delta_theta_right) / 2) * (self.circumference / self.turning_circumference)
+        if not self.use_imu:
+            orientation_change = ((delta_theta_left - delta_theta_right) / 2) * (self.circumference / self.turning_circumference)
         #if -3 < self.orientation_change < 3:
         #    self.orientation_change = 0
         
-        # Update odometry theta
-        self.theta_odom += self.orientation_change
-        self.theta_odom %= 360
+            # Update odometry theta
+            self.theta_odom += orientation_change
+            self.theta_odom %= 360
+        
+        # use imu or encoder to calculate theta
+        if self.use_imu:
+            self.theta = self.theta_imu
+        else:
+            self.theta = self.theta_odom
 
         # Update position using fused theta
-        self.x += displacement * np.cos(np.radians(self.theta_imu + self.orientation_change / 2))
-        self.y += displacement * np.sin(np.radians(self.theta_imu + self.orientation_change / 2))
+        self.x += displacement * np.cos(np.radians(self.theta + self.orientation_change / 2))
+        self.y += displacement * np.sin(np.radians(self.theta + self.orientation_change / 2))
         
         # Update raw odometry theta
         self.get_logger().info(f'Original Encoder Orientation: {self.theta_odom:.2f}')
-
-    def fuse_angles(self, theta_odom, theta_imu, weight_odom, weight_imu):
-        #if 5 <= abs(theta_odom - theta_imu) <= 355:
-        #    return theta_odom
-        # Convert angles to radians
-        rad_odom = np.radians(theta_odom)
-        rad_imu = np.radians(theta_imu)
-
-        # Turn into unit vectors
-        x = weight_odom * np.cos(rad_odom) + weight_imu * np.cos(rad_imu)
-        y = weight_odom * np.sin(rad_odom) + weight_imu * np.sin(rad_imu)
-
-        # Convert back to angle
-        fused_rad = np.arctan2(y, x)
-        fused_deg = np.degrees(fused_rad) % 360
-        return fused_deg
 
     def imu_listener_callback(self, msg):
         
@@ -127,23 +119,16 @@ class SensorFusionNode(Node):
                 current_heading = self.last_heading
             else:
                 self.theta_imu += (current_heading - self.last_heading)
-                self.orientation_change = heading_change
+                if self.use_imu:
+                    self.orientation_change = heading_change
                 
         self.last_heading = current_heading
         #self.get_logger().info(f'real angle:{current_heading:.2f}')
         self.theta_imu %= 360
         self.get_logger().info(f'IMU heading: {self.theta_imu:.2f}')
-
-        # Fuse theta
-        if self.theta_imu is not None:
-            if self.orientation_change > 0:  # Turning Right
-                #self.theta = self.fuse_angles(self.theta_odom, self.theta_imu, 0.8, 0.2)
-                self.theta = self.fuse_angles(self.theta_odom, self.theta_imu, 0.0, 1.0)
-            elif self.orientation_change < 0:  # Turning Left
-                #self.theta = self.fuse_angles(self.theta_odom, self.theta_imu, 0.2, 0.8)
-                self.theta = self.fuse_angles(self.theta_odom, self.theta_imu, 0.0, 1.0)
-            else:  # Straight
-                self.theta = self.theta_imu
+        
+        if self.use_imu:
+            self.theta = self.theta_imu
         else:
             self.theta = self.theta_odom
         

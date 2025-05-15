@@ -1,14 +1,10 @@
-/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/subscriber_member_function.py
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/teensy_subscriber_odom.py
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/teensy_subscriber.py
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__init__.py
-/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/publisher_member_function.py
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/teensy_subscriber_fusion.py
-/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/subscriber_member_function.cpython-312.pyc
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/teensy_subscriber_odom.cpython-312.pyc
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/teensy_subscriber.cpython-312.pyc
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/__init__.cpython-312.pyc
-/home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/publisher_member_function.cpython-312.pyc
 /home/pi/ros2_ws_car/install/python_parameters/lib/python3.12/site-packages/python_parameters/__pycache__/teensy_subscriber_fusion.cpython-312.pyc
 /home/pi/ros2_ws_car/install/python_parameters/share/ament_index/resource_index/packages/python_parameters
 /home/pi/ros2_ws_car/install/python_parameters/share/python_parameters/package.xml
