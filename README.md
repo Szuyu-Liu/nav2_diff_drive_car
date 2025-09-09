@@ -4,8 +4,6 @@ An implementation of **autonomous navigation** for differential drive robots usi
 
 This is the [link](https://drive.google.com/file/d/1UGohlF4hFTtLeBsVapYi-5T-qgDYO2yT/view?usp=sharing) to the video of the performance of the autonomous car in a dynamic environment:
 
-https://drive.google.com/file/d/1UGohlF4hFTtLeBsVapYi-5T-qgDYO2yT/view?usp=sharing
-
 Hardware architecture of the system
 <img width="1073" height="658" alt="image" src="https://github.com/user-attachments/assets/aa925437-fc4d-4c58-aeb7-8a68cda480c0" />
 
