@@ -5,3 +5,5 @@ An implement of autonomous navigation with ROS2 jazzy, Nav2 and slam toolbox on 
 - IMU
 - Lidar launch, param
 - teensy subscriber launch (sensor fusion)
+
+The core code is in src/python_parameters/python_parameters
