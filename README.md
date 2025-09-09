@@ -1,17 +1,34 @@
-# nav2_diff_drive_car
-An implementation of autonomous navigation with ROS2 Jazzy, Nav2, and slam toolbox on differential drive robots
+# nav2_diff_drive_car  
 
-- workflow
-- IMU
-- Lidar launch, param
-- teensy subscriber launch (sensor fusion)
+An implementation of **autonomous navigation** for differential drive robots using **ROS 2 Jazzy**, **Nav2**, and the **SLAM Toolbox**.  
 
-The logic of the odometry is in src/python_parameters/python_parameters/teensy_subscriber.py, in which we fused the feedback from IMU and encoders on servo motors.
+Hardware Architecture
+<img width="1073" height="658" alt="image" src="https://github.com/user-attachments/assets/aa925437-fc4d-4c58-aeb7-8a68cda480c0" />
 
-IMU drifting is compensated for by ignoring the changes smaller than 0.1 degrees.
-An entire transformation tree must be completed: map->odom->base_link->laser_frame
-Map is published by the SLAM Toolbox or AMCL algorithm in Nav2
-Odom is computed and published by the Python code teensy_subscriber.py
-Base_link and laser_frame are published by YDlidar
+Software Dataflow Architecture
+<img width="1717" height="825" alt="image" src="https://github.com/user-attachments/assets/2d56be06-0d57-41cd-99bd-9a12b879d63a" />
 
-The best performance is conducted with the Dijkstra plan-planning algorithm and MPPI controller algorithm.
+## Features  
+- End-to-end workflow for differential-drive robot navigation  
+- Integration of **IMU** and **servo motor encoders** for odometry  
+- **Lidar-based localization and mapping** with configurable launch and parameter files  
+- **Sensor fusion** via a Teensy subscriber node  
+
+## Odometry Logic  
+The odometry logic is implemented in:  
+src/python_parameters/python_parameters/teensy_subscriber.py
+
+This node fuses IMU data with encoder feedback from the servo motors to compute odometry.  
+
+- **IMU drift compensation**: Changes smaller than **0.1°** are ignored to reduce noise.  
+- **TF tree**: A complete transformation chain is required:  
+map → odom → base_link → laser_frame
+- `map`: published by **SLAM Toolbox** or **AMCL** in Nav2  
+- `odom`: computed and published by `teensy_subscriber.py`  
+- `base_link` and `laser_frame`: published by **YDLidar**  
+
+## Navigation  
+- Best results are achieved with:  
+- **Dijkstra global planner**  
+- **MPPI local controller**  
+
