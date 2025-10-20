@@ -38,26 +38,29 @@ Documentation for
 6. Setup UI for Ubuntu 24.04 on Raspberry pi
 7. Launch Navigation2
 
-### 🔹1. IMU and Encoder Fusion
-To improve the accuracy of heading estimation:
+### 🔹1. Odometry - IMU and Encoder Fusion
 
 - Encoders compute the robot’s pose from wheel diameter and wheel bases (distance between two wheels)
 - IMU provides orientation, but can drift due to noise and vibration.
 
-Fusion is done by:
-
-- Filtering out small drifts (< 1°) and known noise spikes (around 8°).
-
-- Using encoder heading when going straight, and fusing IMU + encoder when turning.
+To improve the accuracy of heading estimation:
+- Filtering out small IMU drifts (< 0.1°)
+- Fusing IMU angles with encoder feedback from the servo motors to compute odometry.
+ 
+The odometry logic is implemented in:  
+src/python_parameters/python_parameters/teensy_subscriber.py
 
 ```
-# Fusion weights
-if orientation_change > 0:  # Right turn
-    theta = fuse(odom, imu, 0.9, 0.1)
-elif orientation_change < 0:  # Left turn
-    theta = fuse(odom, imu, 0.9, 0.1)
-else:
-    theta = theta_odom
+        if abs(heading_change) >= 0.1:
+            # ignore the imu noise around 8.0 and current_heading around 248
+            if current_heading >= 360:
+                current_heading = self.last_heading
+            else:
+                self.theta_imu += (current_heading - self.last_heading)
+                if self.use_imu:
+                    self.orientation_change = heading_change
+                
+        self.last_heading = current_heading
 ```
 
 ### 🔹2. Odometry Publisher
