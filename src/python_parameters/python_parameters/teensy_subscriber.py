@@ -18,19 +18,19 @@ class SensorFusionNode(Node):
         qos_profile = QoSProfile(depth=10)
         qos_profile.reliability = ReliabilityPolicy.BEST_EFFORT
 
-        # Subscribers of angles and IMU from the car
+        # Subscribe encoder angles and IMU angles from the car
         self.subscription = self.create_subscription(Float32MultiArray, '/car_angles', self.car_angles_callback, qos_profile)
         self.imu_subscription = self.create_subscription(Float32MultiArray, '/imu_euler', self.imu_listener_callback, qos_profile)
 
-        # Publishers current position, initialize car position and odometry
+        # Publish current position, initialize car position and odometry
         self.cmd_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
         self.odom_publisher = self.create_publisher(Odometry, '/odom', 10)
         self.tf_broadcaster = TransformBroadcaster(self)
         
-        # Car state
+        # Initial car state
         self.x = 0.0
         self.y = 0.0
-        self.theta = 0.0  # Initial orientation
+        self.theta = 0.0  
         self.theta_odom = 0.0
         self.theta_imu = 0.0
         self.use_imu = True
@@ -75,13 +75,10 @@ class SensorFusionNode(Node):
         
         # Compute displacement and orientation change
         displacement = ((delta_theta_right + delta_theta_left) / (2 * 360)) * self.circumference
-        #if -1 < displacement < 1:
-        #    displacement = 0
+    
 
         if not self.use_imu:
             orientation_change = ((delta_theta_left - delta_theta_right) / 2) * (self.circumference / self.turning_circumference)
-        #if -3 < self.orientation_change < 3:
-        #    self.orientation_change = 0
         
             # Update odometry theta
             self.theta_odom += orientation_change
