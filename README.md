@@ -28,15 +28,6 @@ map → odom → base_link → laser_frame
 - `map`: published by **SLAM Toolbox** or **AMCL** in Nav2  
 - `odom`: computed and published by `teensy_subscriber.py`  
 - `base_link` and `laser_frame`: published by **YDLidar**
-## 🔧 Nav2 and Slam_toolbox Setup 🔧
-Documentation for 
-1. IMU and encoder fusion
-2. Odometry publisher 
-3. Transformer setup
-4. LiDAR Parameters (YDLidar)
-5. SLAM Toolbox Launch
-6. Setup UI for Ubuntu 24.04 on Raspberry pi
-7. Launch Navigation2
 
 ### 🔹1. Odometry - IMU and Encoder Fusion
 
