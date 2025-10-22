@@ -16,15 +16,7 @@ Software dataflow architecture of the system
 - **Lidar-based localization and mapping** with configurable launch and parameter files  
 - **Sensor fusion** via a Teensy subscriber node  
 
-## Odometry Logic  
-The odometry logic is implemented in:  
-src/python_parameters/python_parameters/teensy_subscriber.py
-
-This node fuses IMU data with encoder feedback from the servo motors to compute odometry.  
-
-- **IMU drift compensation**: Changes smaller than **0.1°** are ignored to reduce noise.  
-- **TF tree**: A complete transformation chain is required:  
-map → odom → base_link → laser_frame
+## Published Frames
 - `map`: published by **SLAM Toolbox** or **AMCL** in Nav2  
 - `odom`: computed and published by `teensy_subscriber.py`  
 - `base_link` and `laser_frame`: published by **YDLidar**
